@@ -32,7 +32,11 @@ WORKDIR /workspace
 
 # Create .claude directory
 RUN mkdir -p /home/node/.claude
+RUN mkdir -p ~/.pnpm-global/bin
 
 COPY --chown=node:node .devcontainer/claude-settings.json /home/node/.claude/settings.json
+
+RUN export PNPM_HOME="$HOME/.pnpm-global/bin"
+RUN export PATH="$PNPM_HOME:$PATH"
 
 CMD ["/bin/bash"]

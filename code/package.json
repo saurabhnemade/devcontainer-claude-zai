@@ -13,9 +13,5 @@
   "devDependencies": {
     "typescript": "^5.0.0"
   },
-  "engines": {
-    "node": ">=18",
-    "pnpm": ">=8"
-  },
   "packageManager": "pnpm@10.19.0"
 }

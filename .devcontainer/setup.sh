@@ -51,4 +51,9 @@ else
     exit 1
 fi
 
+# Setup pnpm using corepack
+echo "Setting up pnpm..."
+corepack prepare pnpm@latest --activate
+
+echo "✓ pnpm is now available and ready to use"
 echo "Setup completed successfully!"

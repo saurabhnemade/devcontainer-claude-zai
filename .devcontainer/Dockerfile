@@ -22,6 +22,9 @@ RUN mkdir -p /home/node && \
 # Install Claude Code CLI prerequisites
 RUN npm install -g @anthropic-ai/claude-code || true
 
+# Enable corepack
+RUN corepack enable
+
 # Switch to node user
 USER node
 

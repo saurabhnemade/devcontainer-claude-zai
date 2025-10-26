@@ -21,7 +21,7 @@ CLAUDE_DIR="$HOME/.claude"
 mkdir -p "$CLAUDE_DIR"
 
 # Path to the template and final settings files
-TEMPLATE_FILE="/workspaces/claude-devcontainer/.devcontainer/claude-settings.json"
+TEMPLATE_FILE="/workspaces/devcontainer-claude-zai/.devcontainer/claude-settings.json"
 SETTINGS_FILE="$CLAUDE_DIR/settings.json"
 
 # Check if template file exists

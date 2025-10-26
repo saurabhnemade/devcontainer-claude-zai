@@ -7,7 +7,6 @@ RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
     wget \
     git \
     vim \
-    nano \
     build-essential \
     python3 \
     python3-pip \
